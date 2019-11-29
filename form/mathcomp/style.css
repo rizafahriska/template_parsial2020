@@ -1,7 +1,13 @@
 body{
-	background: url("dark.png");
+	background-image: url("space.jpeg");
 	font-family: "Verdana", sans-serif;
-	color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	width: 100%;
+	height: 100%;
 }
 
 .container{
@@ -12,6 +18,7 @@ body{
 #header{
 	margin-top: 30px;
 	margin-bottom: 5px;
+	position: relative;
 }
 
 #header:after, #header:before{
@@ -24,35 +31,21 @@ body{
 }
 
 #header h2{
-	color: #eae9f3;
-	font-family: source san pro;
+	color: #fff;
+	font-family: Lucida Sans Unicode;
 	margin-bottom: 25px;
 	margin-top: -10px;
-	font-size: 41px;
-	text-align: justify;
+	font-size: 37px;
+	text-align: center;
 }
 
 .form-container{
-	background: #fbfbfb;
+	background: rgba(0,0,0,0.5);
 	padding: 20px;
-	border: 1px solid #aaa;
 	position: relative;
-	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 5px black;
 	border-radius: 3px;
 	margin-bottom: 30px;
-}
-
-.form-container:after, .from-container:before{
-	background: #fbfbfb;
-	border: 1px solid #aaa;
-	bottom: -8px;
-	position: absolute;
-	left: 4px;
-	content: "";
-	height: 100%;
-	width: 100%;
-	z-index: -10;
-	box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
 .form-container:before{
@@ -60,11 +53,11 @@ body{
 	left: 8px;
 	width: 100%;
 	border-radius: 3px;
-	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 5px black;
 }
 
 fieldset{
-	border: 3px solid #bbb;
+	border: 5px solid #ffb7cf;
 	border-radius: 3px;
 	margin-bottom: 25px;
 }
@@ -73,18 +66,20 @@ legend{
 	padding-right: 20px;
 	padding-left: 20px;
 	font-weight: 900;
-	color: #0a0479;
+	color: #cf5c95;
 	margin-bottom: 8px;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .form-grup{
 	margin-bottom: 15px;
 	margin-right: 17px;
+	color: #fff;
 }
 
 .form-grup:after, .form-grup:before{
-	display: table;
+	display: flex;
+	justify-content: space-between;
 	content: "";
 }
 
@@ -94,12 +89,12 @@ legend{
 
 .label{
 	float: left;
-	width: 35%;
+	width: 100%;
 	border: 0;
-	font-weight: 1000;
-	color: #100f0f;
-	font-size: 13px;
+	color: #fff;
+	font-size: 16px;
 	margin-bottom: 1px;
+	padding-left: 7px;
 }
 
 .label label{
@@ -111,40 +106,54 @@ legend{
 	float: left;
 	width: 70%;
 	border: 0;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.form-grup hr{
+	margin-left: 11px;
+	color: #5e558e;
+	border: solid;
 }
 
 a{
 	font-weight: bold;
 	cursor: pointer;
-	color: #135ba5;
+	color: #4b82d4;
 }
 
 input[type=text], input[type=text], input[type=date], textarea, input[type=email], input[type=tel], input[type=text], input[type=tel]{
-	border: 2px solid #bbbb;
+	border: none;
 	padding: 8px;
 	border-radius: 3px;
-	background: #fff;
+	background: none;
 	width: 100%;
 	font-family: inherit;
+	border-bottom: 2px solid #ffb7cf;
+	color: white;
+	font-size: 14px;
 }
 
-input[type=text]:focus, input[type=text]:focus, input[type=date]:focus, textarea:focus, input[type=email]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=tel]:focus{
-	border: 2px solid #358fea;
+input[type=checkbox]:checked{
+	background-color: rgb(0,0,0,0.5);
+	color: #fff;
 }
 
 button[type=submit]{
-	background: #7d4296;
+	background: #cf5c95;
 	border-radius: 5px;
-	font-family: montserrat, sans-serif;
+	border-color: #ffb7cf;
+	font-family: verdana, sans-serif;
 	color: #fff;
-	font-size: 20px;
+	font-size: 17px;
 	padding: 10px 20px;
 	text-decoration: none;
 	float: right;
 }
 
 button[type=submit]:hover{
-	background: #2980d1;
+	background: #5e558e;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -152,7 +161,8 @@ button[type=submit]:hover{
 footer{
 	padding: 3px;
 	font-size: 20px;
-	font-family: montserrat;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
 	color: #eae9f3;
 	text-align: center;
 }
@@ -173,19 +183,23 @@ footer{
 	#header h2{
 		float: none;
 		width: 100%;
-		margin: 8;
-		font-size: 30px;
+		font-size: 25px;
 		text-align: center;
+		margin-bottom: 15px;
 	}
 	legend{
 		float: none;
-		width: 100%;
+		width: 95%;
+		font-size: 16px;
 	}
 	.form-grup{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	fieldset{
 		margin-bottom: 20px;
+	}
+	button{
+		cursor: pointer;
 	}
 	
 }
