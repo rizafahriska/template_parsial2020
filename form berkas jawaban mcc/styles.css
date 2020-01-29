@@ -1,0 +1,273 @@
+body{
+	background-image: url("space.jpeg");
+	font-family: "Verdana", sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+#header{
+	margin-top: 30px;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+#header:after, #header:before{
+	display: table;
+	content: "";
+}
+
+#header:after{
+	clear: both;
+}
+
+.form-container{
+	background: rgba(0,0,0,0.5);
+	padding: 20px;
+	position: relative;
+	box-shadow: 0 0 10px 5px black;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+.form-container:before{
+	bottom: -14px;
+	left: 8px;
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 5px black;
+}
+
+fieldset{
+	border: 5px solid #ffb7cf;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+
+legend{
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 900;
+	color: #cf5c95;
+	margin-bottom: 8px;
+	font-size: 15px;
+}
+
+.form-grup{
+	margin-bottom: 15px;
+	margin-right: 17px;
+	color: #fff;
+}
+
+.form-grup:after, .form-grup:before{
+	display: flex;
+	justify-content: space-between;
+	content: "";
+}
+
+.form-grup:after{
+	clear: both;
+}
+
+.label{
+	float: left;
+	width: 100%;
+	border: 0;
+	color: #ffb7cf;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 1px;
+	margin-top: 10px;
+	padding-left: 7px;
+}
+
+.label label{
+	display: inline-block;
+	vertical-align: -webkit-baseline-middle;
+}
+
+.input{
+	float: left;
+	width: 100%;
+	border: 0;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+input[type=text], input[type=email]{
+	border: none;
+	padding: 8px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background: none;
+	width: 100%;
+	font-family: inherit;
+	border-bottom: 2px solid #ffb7cf;
+	color: white;
+	font-size: 14px;
+}
+
+input[type=checkbox]:checked{
+	background-color: rgb(0,0,0,0.5);
+	color: #fff;
+}
+
+button[type=submit]{
+	background: #cf5c95;
+	border-radius: 5px;
+	border-color: #ffb7cf;
+	font-family: verdana, sans-serif;
+	color: #fff;
+	font-size: 17px;
+	padding: 10px 20px;
+	text-decoration: none;
+	float: right;
+}
+
+#header h3{
+	color: #fff;
+	font-family: Lucida Sans Unicode;
+	margin-bottom: 25px;
+	margin-top: -10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+button[type=submit]:hover{
+	background: #5e558e;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.form-upload{
+	border: 2px solid #ffb7cf;
+	color: #fff;
+	background-color: #5e558e;
+	font-family: 'Verdana', sans-serif;
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-size: 14px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 20px;
+	}
+
+input[type=file]:hover{
+	background: #8d1539;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.form-upload input{
+	cursor: pointer;
+	font-size: 100px;
+	height: 100%;
+	filter: alpha(opacity=1);
+	-moz-opacity: 0.01;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.form-upload .tombol{
+background:linear-gradient(top, #f0f0f0, #CCC);
+background: -moz-linear-gradient(top, #f0f0f0, #CCC);
+background: -webkit-linear-gradient(top, #f0f0f0, #CCC);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+margin-right: 5px;
+padding: 8px;
+border:1px solid #999;
+}
+
+footer{
+	padding: 3px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	color: #eae9f3;
+	text-align: center;
+}
+
+@media (max-width: 480px){
+	.container{
+		width: 95%;
+		margin: 0 auto;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.label{
+		float: none;
+		width: 95%;
+	}
+	.input{
+		float: none;
+		width: 95%;
+	}
+	legend{
+		float: none;
+		width: 95%;
+		font-size: 16px;
+		text-align: center;
+	}
+	.form-grup{
+		font-size: 14px;
+	}
+	fieldset{
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	button{
+		cursor: pointer;
+	}
+	.form-upload{
+		font-size: 12px;
+		padding: 8px;
+		width: 85%;
+		margin: 0 auto;
+	}
+	.form-control{
+	font-size: 12px;
+	margin-left: 25px;
+	margin-top: 8px;
+	}
+	#header h3{
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+		font-size: 25px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+	.container{
+		width: 100%;
+	}
+}
