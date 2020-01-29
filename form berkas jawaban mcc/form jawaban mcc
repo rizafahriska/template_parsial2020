@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Berkas Jawaban MCC - PARSIAL 2020</title>
+    <meta name="keywords" content="" />
+    <!--[if IE 8]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="google" content="notranslate">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" type="text/css" href="https://www.parsialhimatika.com/assets/plugins/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h3>Form Upload Berkas Jawaban MCC 2020</h3></div>
+        <div class="form-container upload-btn-wrapper">
+            <form action="https://www.parsialhimatika.com/upload/mcc/18" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Isi semua data di bawah ini dengan lengkap!</legend>
+                    <div class="form-grup">
+                        <div class="label">
+                            <label>Nama Tim</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="name_team" placeholder="Isi nama team Anda" maxlength="30" autofocus required />
+                        </div>
+                        <div class="label">
+                            <label>Email Ketua Tim</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email_team" placeholder="misal: emailketuatim@gmail.com" autocomplete="off" required />
+                        </div>
+
+                        <ul>
+                        <div class="label">
+                            <label>Upload Makalah</label>
+                        </div>
+                        <div class="input">
+                            <input type="file" class="form-upload" name="makalah[]" /required>
+                        </div>
+                        <div class="label">
+                            <label>Upload Poster</label>
+                        </div>
+                        <div class="input">
+                            <input type="file" class="form-upload" name="poster[]" /required>
+                        </div>
+                    </div>
+                        </ul>
+                        
+                </fieldset>
+                <div class="form-grup button-submit">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Parsial 2020 | All Rights Reserved</p>
+    </footer>
+    <script type="text/javascript" src="https://www.parsialhimatika.com/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+</body>
+
+</html>
